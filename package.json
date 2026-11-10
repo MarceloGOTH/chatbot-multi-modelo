@@ -1,0 +1,16 @@
+{
+  "name": "nexo-chat-local",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --experimental-strip-types server.ts",
+    "dev": "node --watch --experimental-strip-types server.ts",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "benchmark": "node --experimental-strip-types scripts/benchmark.mjs"
+  },
+  "devDependencies": { "@types/node": "^24.0.0", "typescript": "^5.9.0" },
+  "engines": { "node": ">=24" }
+}
